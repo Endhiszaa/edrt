@@ -119,7 +119,7 @@ class DroneAPI:
 
     #movement
     def takeoff(self, alt=2.0, tol=0.1):
-         if not self.armed:
+        if not self.armed:
             self.arm()
         with self._lock:
             self.mode = "GUIDED"
